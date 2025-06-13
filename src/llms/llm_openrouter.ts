@@ -21,8 +21,7 @@ export class DemoLlmClient {
   constructor() {
     this.client = new OpenAI({
       baseURL: "https://openrouter.ai/api/v1",
-      apiKey:
-        "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",
+      apiKey: process.env.OPENROUTER_API_KEY,
     });
   }
 
