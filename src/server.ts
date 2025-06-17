@@ -110,7 +110,7 @@ export class Server {
               request.interaction_type === "reminder_required" ||
               request.interaction_type === "response_required"
             ) {
-              console.clear();
+              // console.clear();
               console.log("req", request);
               llmClient.DraftResponse(request, ws);
             } else if (request.interaction_type === "ping_pong") {
